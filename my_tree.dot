@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<gene_18746 &le; 10.726<br/>gini = 0.75<br/>samples = 558<br/>value = [215, 47, 102, 101, 93]<br/>class = BRCA>, fillcolor="#f9e0ce"] ;
+1 [label=<gene_6733 &le; 9.692<br/>gini = 0.743<br/>samples = 349<br/>value = [7, 47, 102, 101, 92]<br/>class = LUAD>, fillcolor="#feffff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gene_13950 &le; 11.508<br/>gini = 0.66<br/>samples = 248<br/>value = [7, 47, 1, 101, 92]<br/>class = PRAD>, fillcolor="#f4f4fe"] ;
+1 -> 2 ;
+3 [label=<gene_3523 &le; 6.324<br/>gini = 0.488<br/>samples = 156<br/>value = [7, 47, 1, 101, 0]<br/>class = PRAD>, fillcolor="#9e9df2"] ;
+2 -> 3 ;
+4 [label=<gene_15898 &le; 2.666<br/>gini = 0.137<br/>samples = 109<br/>value = [7, 0, 1, 101, 0]<br/>class = PRAD>, fillcolor="#4b49e7"] ;
+3 -> 4 ;
+5 [label=<gene_18141 &le; 7.901<br/>gini = 0.219<br/>samples = 8<br/>value = [7, 0, 1, 0, 0]<br/>class = BRCA>, fillcolor="#e99355"] ;
+4 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 7<br/>value = [7, 0, 0, 0, 0]<br/>class = BRCA>, fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 1, 0, 0]<br/>class = LUAD>, fillcolor="#39e5c5"] ;
+5 -> 7 ;
+8 [label=<gini = 0.0<br/>samples = 101<br/>value = [0, 0, 0, 101, 0]<br/>class = PRAD>, fillcolor="#3c39e5"] ;
+4 -> 8 ;
+9 [label=<gini = 0.0<br/>samples = 47<br/>value = [0, 47, 0, 0, 0]<br/>class = KIRC>, fillcolor="#7be539"] ;
+3 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 92<br/>value = [0, 0, 0, 0, 92]<br/>class = COAD>, fillcolor="#e539c0"] ;
+2 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 101<br/>value = [0, 0, 101, 0, 0]<br/>class = LUAD>, fillcolor="#39e5c5"] ;
+1 -> 11 ;
+12 [label=<gene_2989 &le; 8.485<br/>gini = 0.01<br/>samples = 209<br/>value = [208, 0, 0, 0, 1]<br/>class = BRCA>, fillcolor="#e5823a"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label=<gini = 0.0<br/>samples = 208<br/>value = [208, 0, 0, 0, 0]<br/>class = BRCA>, fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 1<br/>value = [0, 0, 0, 0, 1]<br/>class = COAD>, fillcolor="#e539c0"] ;
+12 -> 14 ;
+}
